@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "sozo_project_backend": {
+      "main": "src/sozo_project_backend/main.mo",
+      "type": "motoko"
+    },
+    "sozo_project_frontend": {
+      "dependencies": [
+        "sozo_project_backend"
+      ],
+      "source": [
+        "src/sozo_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "sozo_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
